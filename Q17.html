@@ -1,0 +1,22 @@
+<!-- 
+
+Write a JavaScript program to find the larger value between the first or last
+and set all the other elements with that value. Display the new array -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var arr = [20, 120, 111, 215, 54, 78];
+    var max = Math.max.apply(null, arr);
+    arr.pop(arr.indexOf(max), 1);
+    alert(Math.max.apply(null,arr)); 
+    </script>
+</body>
+</html>

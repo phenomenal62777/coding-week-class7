@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        today = new Date();
+        var a=new Date(today.getFullYear(),8,14);
+        if(today.getMonth()==8 && today.getDate()>25){
+            a.setUTCFullYear(a.getFullMonth()+1);
+        }
+        // var one_day=1000*60*60*24;
+        alert(Math.ceil(a.getDate-today.getFullMonth));
+
+    </script>
+</body>
+</html>
